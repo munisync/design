@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+// Scheme Colors
+$light-grey: #f7f7f7;
+$darker-light-grey: #dcdde1;
+$dark-blue-up: #4b7bec;
+$dark-blue-down: #3867d6;
+$light-blue-up: #45aaf2;
+$light-blue-down: #2d98da;
+$my-black: #333333;
+$real-white: hsl(0, 0%, 100%) !default;
+$real-black: hsl(0, 0%, 4%) !default;
+
+$green-light: #2ecc71;
+$green-dark: #27ae60;
+
+$text: $my-black;
+
+//$menu-item-sec-active-color: $link-invert !default;
+//$menu-item-sec-background-color: $light-blue-up !default;
+
+// Global 
+$font-family: "Montserrat", sans-serif;
+$primary: $light-blue-up;
+
+
+// Body
+$body-background-color: $light-grey;
+
+// Inputs
+
+$input-border-color: $darker-light-grey;
+$input-shadow: rgba(0,0,0,0.1) 0 7px 25px 0;
+$control-border-width: 1px;
+$input-focus-color: none;
+
+// Links
+
+// Navbar
+$navbar-height: 5.25rem !default;
+$navbar-item-img-max-height: 3.5em !default;
+
+// Box 
+$box-radius: 1px;
+
+
+
+// Titles
+$title-color: #333;
+
+// Control
+$control-radius-none: 3px;
+$my-input-radius: 0px;
+
+// Button
+$rounder: 3px;
+
+// Checkboxs
+$checkbox-border: $control-border-width solid $darker-light-grey !default;
+$checkbox-block-background: #fff !default;
+
+// Sections 
+$section-padding: 0 0;
+
+// Custom Styling
+$spacing-shortcuts: ("margin": "mg");
+$spacing-horizontal: "h";
+$spacing-vertical: null;
+$spacing-values: ("1": 1vh, "2": 2vh, "3": 3vh, "4": 4vh, "5": 5vh, "6": 6vh, "7": 7vh, "8": 8vh, "9": 9vh, "10": 10vh);
+
+// Steps
+$steps-completed-color: $green-light;
+$steps-active-color: $green-light;
+
+.is-vertical-center {
+    margin-top:7vh;
+}
+
+.control-radius-none {
+    border-radius: $control-radius-none;
+}
+
+.radius-none {
+    border-radius: 0px;
+}
+.no-outline {
+    outline:none;
+}
+
+.check-back-white {
+    $checkbox-border: $control-border-width solid $darker-light-grey !default;
+}
+
+.y-center-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.has-vertically-aligned-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navbar-dropdown-arrow-black::after {
+    border-color:$my-black;
+}
+
+.sticky {
+    position: sticky;
+}
+    
+
+@import "../bulma/bulma.sass";
+@import "../bulma/ext/checkradio.sass";
+@import "../bulma/ext/pageloader.sass";
+@import "../bulma/ext/steps.sass";
+
+.sec-box {
+    box-shadow:none;
+    border: 3px solid #eaebef;
+}
